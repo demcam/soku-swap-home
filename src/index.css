@@ -1,13 +1,65 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  min-height: 100vh;
+  background: linear-gradient(250deg, #05195a 33.3%, #040f31) !important;
+}
+
+::-webkit-scrollbar-thumb {
+  display: none;
+}
+
+.App h1 {
+  text-align: center;
+  color: #fff;
+}
+
+* {
+  font-family: 'Poppins', 'sans-serif';
+}
+
+/* 'x' and Wallet names on Connect to a Wallet */
+button[id='wallet-connect-metamask'] div,
+button[id='wallet-connect-trustwallet'] div,
+button[id='wallet-connect-mathwallet'] div,
+button[id='wallet-connect-tokenpocket'] div,
+button[id='wallet-connect-walletconnect'] div,
+button[id='wallet-connect-binance chain wallet'] div,
+button[id='wallet-connect-safepal wallet'] div {
+  color: #04bbfb !important;
+  fill: #04bbfb !important;
+  font-family: 'Poppins' !important;
+}
+
+a[href="https://docs.pancakeswap.finance/guides/faq#how-do-i-set-up-my-wallet-on-binance-smart-chain"] {
+  display: none;
+}
+
+div[role='presentation'] {
+  background: rgba(0, 0, 0, 0.603);
+}
+
+h2[color='text'] {
+  color: #05195a;
+  font-family: 'Poppins', 'sans';
+}
+
+svg[color='primary'] {
+  color: #04bbfb;
+  fill: #04bbfb;
+}
+
+div[color='textSubtle'] {
+  color: #05489c;
+}
+
+svg[stroke='#8f80ba'] {
+  stroke: #05195a;
+  border: none;
+}
+
+.pancake-button--disabled {
+  background: #d8d8d8 !important;
 }
